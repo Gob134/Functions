@@ -19,7 +19,6 @@ int Sum(const int arr[], const int n);
 char Sum(const char arr[], const int n);
 double Sum(const double arr[], const int n);
 
-double Avg(const int arr[], const int n);
 double Avg(const char arr[], const int n);
 double Avg(const double arr[], const int n);
 
@@ -92,7 +91,7 @@ void Print(const int arr[], const int n)
 }
 void Print(const char arr[], const int n)
 {
-	for (int i = 0; i < n; i++)
+	for (char i = 0; i < n; i++)
 	{
 		cout << arr[i] << tab;
 	}
@@ -184,10 +183,6 @@ double Sum(const double arr[], const int n)
 }
 
 
-double Avg(const int arr[], const int n)
-{
-	return Sum(arr, n) / n;
-}
 double Avg(const char arr[], const int n)
 {
 	return Sum(arr, n) / n;
